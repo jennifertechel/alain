@@ -20,6 +20,12 @@ const theme = extendTheme({
   fonts: {
     heading: "bodoni",
   },
+  breakpoints: {
+    base: "340px", // Mobile
+    md: "1024px", // Tablet
+    lg: "1440px", // Desktop
+    xl: "1920px", // Large Desktop
+  },
 });
 
 function App() {
