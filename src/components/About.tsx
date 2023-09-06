@@ -1,12 +1,37 @@
-import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  List,
+  ListItem,
+  ListIcon,
+} from "@chakra-ui/react";
+import { BsCircle } from "react-icons/bs";
 
 function About() {
   return (
-    <Flex w='100%' bg='brand.200' px={24} flexDir='column'>
-      <Flex pb={8}>
-        <Flex py={8}>
+    <Flex
+      w='100%'
+      bg='brand.200'
+      px={{ base: 4, md: 10, lg: 16 }}
+      py={{ base: 4, md: 16 }}
+      flexDir='column'
+    >
+      <Flex
+        pb={{ base: 4, md: 16 }}
+        flexDir={{ base: "column", md: "row" }}
+        alignItems={"center"}
+      >
+        <Flex>
           <Box>
-            <Image src='/assets/product-1.jpeg' w='80%' borderRadius={16} />
+            <Image
+              src='/assets/product-1.jpeg'
+              w={{ base: "540px", lg: "720px" }}
+              borderRadius={16}
+            />
           </Box>
         </Flex>
         <Flex
@@ -14,34 +39,68 @@ function About() {
           alignItems='center'
           flexDir='column'
           justifyContent='center'
-          w='50%'
+          w={{ base: "100%", md: "50%" }}
         >
           <Heading>OUR MISSION</Heading>
-          <Text py={6}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            officiis ex reprehenderit, minima beatae placeat corporis quo vero?
-            Vel expedita beatae enim officiis quasi tempore optio facilis
-            incidunt suscipit.
+          <Text py={{ base: 6, md: 3, lg: 6 }}>
+            At Alain, we're on a mission to redefine your coffee experience.
+            With a deep appreciation for timeless Scandinavian design and a
+            commitment to sustainability, we've crafted a collection of coffee
+            cups that embody both elegance and eco-friendliness.
+            <br />
+            <br />
+            Join us in embracing the warmth of your favorite beverages with cups
+            that mirror your values. Elevate your coffee ritual, honor the
+            environment, and let every sip tell a story of craftsmanship and
+            care. Welcome to Alain, where every cup is a journey of taste,
+            style, and sustainability.
           </Text>
           <Button>BUY HERE</Button>
         </Flex>
       </Flex>
-      <Flex>
+      <Flex
+        flexDir={{ base: "column-reverse", md: "row" }}
+        alignItems={"center"}
+      >
         <Flex
           textAlign='center'
           alignItems='center'
           flexDir='column'
           justifyContent='center'
-          w='50%'
+          w={{ base: "100%", md: "50%" }}
+          pb={8}
         >
-          <Heading>NOT YOUR ORDINARY CUP</Heading>
-          <Text>Lorem ipsum dolor sit</Text>
-          <Text>Lorem ipsum dolor sit</Text>
-          <Text>Lorem ipsum dolor sit</Text>
+          <Heading pb={4}>NOT YOUR ORDINARY CUP</Heading>
+          <List textAlign={"left"} spacing={3}>
+            <ListItem>
+              <ListIcon as={BsCircle} />
+              Timeless scandinavian design
+            </ListItem>
+            <ListItem>
+              <ListIcon as={BsCircle} />
+              Recycled ceramic material
+            </ListItem>
+            <ListItem>
+              <ListIcon as={BsCircle} />
+              Handmade for unique patterns and shapes
+            </ListItem>
+            <ListItem>
+              <ListIcon as={BsCircle} />
+              Dishwasher and microwave safe
+            </ListItem>
+            <ListItem>
+              <ListIcon as={BsCircle} />
+              Neatly stackable to save space
+            </ListItem>
+          </List>
         </Flex>
-        <Flex py={8}>
+        <Flex>
           <Box>
-            <Image src='/assets/coffee-cups.jpeg' w='80%' borderRadius={16} />
+            <Image
+              src='/assets/coffee-cups.jpeg'
+              w={{ base: "540px", lg: "720px" }}
+              borderRadius={16}
+            />
           </Box>
         </Flex>
       </Flex>
