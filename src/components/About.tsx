@@ -43,7 +43,7 @@ function About() {
           py={{ base: 8, md: 0 }}
         >
           <Heading>OUR MISSION</Heading>
-          <Text py={{ base: 6, md: 3, lg: 6 }}>
+          <Text py={{ base: 6, md: 3, lg: 6 }} px={4}>
             At Alain, we're on a mission to redefine your coffee experience.
             With a deep appreciation for timeless Scandinavian design and a
             commitment to sustainability, we've crafted a collection of coffee
