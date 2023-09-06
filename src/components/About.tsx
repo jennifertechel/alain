@@ -70,6 +70,7 @@ function About() {
           justifyContent='center'
           w={{ base: "100%", md: "50%" }}
           pb={8}
+          py={{ base: 8, md: 0 }}
         >
           <Heading pb={4}>NOT YOUR ORDINARY CUP</Heading>
           <List textAlign={"left"} spacing={3}>
