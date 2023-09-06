@@ -27,7 +27,7 @@ function Footer() {
         pb={{ base: 12, md: 0 }}
         width={{ base: "100%", md: "50%" }}
       >
-        <Heading w={{ base: "90%", md: "70%" }}>
+        <Heading w={{ base: "90%", lg: "70%" }}>
           GET UPDATES AND STAY CONNECTED WITH OUR NEWSLETTER
         </Heading>
         <InputGroup w={{ base: "50%" }} pt={{ base: 8 }}>

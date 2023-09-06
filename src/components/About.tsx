@@ -40,6 +40,7 @@ function About() {
           flexDir='column'
           justifyContent='center'
           w={{ base: "100%", md: "50%" }}
+          py={{ base: 8, md: 0 }}
         >
           <Heading>OUR MISSION</Heading>
           <Text py={{ base: 6, md: 3, lg: 6 }}>
