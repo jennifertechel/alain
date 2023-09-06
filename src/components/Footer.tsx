@@ -70,14 +70,14 @@ function Footer() {
           pt={8}
         >
           <List spacing={4}>
-            <ListItem>ABOUT</ListItem>
-            <ListItem>PRODUCTS</ListItem>
-            <ListItem>CONTACT</ListItem>
+            <ListItem fontWeight={"400"}>ABOUT</ListItem>
+            <ListItem fontWeight={"400"}>PRODUCTS</ListItem>
+            <ListItem fontWeight={"400"}>CONTACT</ListItem>
           </List>
           <List spacing={4} pt={{ base: 8, md: 0 }}>
-            <ListItem>INSPIRATION</ListItem>
-            <ListItem>OUR RETAILERS</ListItem>
-            <ListItem>TERMS AND CONDITIONS</ListItem>
+            <ListItem fontWeight={"400"}>INSPIRATION</ListItem>
+            <ListItem fontWeight={"400"}>OUR RETAILERS</ListItem>
+            <ListItem fontWeight={"400"}>TERMS AND CONDITIONS</ListItem>
           </List>
         </Flex>
       </Flex>

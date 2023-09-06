@@ -7,3 +7,9 @@
   font-family: "losta-masta";
   src: url(/fonts/LostaMasta-Bold.otf);
 }
+
+p,
+li,
+input {
+  font-weight: 300;
+}
